@@ -1072,7 +1072,9 @@ features
 }
 
 #about-me {
-  padding: 380px 0px;
+  /* padding: 980px 0px; */
+  padding: auto;
+  height:100vh;
   background-image: url(../images/slide-01.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -1080,7 +1082,9 @@ features
 }
 
 #publications {
-  padding: 380px 0px;
+  /* padding: 980px 0px; */
+  padding: auto;
+  height:100vh;
   background-image: url(../images/slide-02.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -1088,7 +1092,9 @@ features
 }
 
 #research {
-  padding: 380px 0px;
+  /* padding: 980px 0px; */
+  padding: auto;
+  height:100vh;
   background-image: url(../images/slide-03.jpeg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -1096,7 +1102,9 @@ features
 }
 
 #teaching {
-  padding: 380px 0px;
+  /* padding: 980px 0px; */
+  padding: auto;
+  height:100vh;
   background-image: url(../images/slide-04.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -1104,7 +1112,9 @@ features
 }
 
 #talks {
-  padding: 380px 0px;
+  /* padding: 980px 0px; */
+  padding: auto;
+  height:100vh;
   background-image: url(../images/slide-05.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -1112,7 +1122,9 @@ features
 }
 
 #tools {
-    padding: 380px 0px;
+    /* padding: 980px 0px; */
+    padding: auto;
+    height:100vh;
     background-image: url(../images/slide-06.png);
     background-position: center center;
     background-repeat: no-repeat;
