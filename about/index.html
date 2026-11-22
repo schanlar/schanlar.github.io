@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#f7f9fb" name="theme-color"/>
+<meta content="Biography, professional experience, education, technical skills, and downloadable CV." name="description"/>
+<meta content="website" property="og:type"/>
+<meta content="About | Savvas Chanlaridis, PhD" property="og:title"/>
+<meta content="Biography, professional experience, education, technical skills, and downloadable CV." property="og:description"/>
+<meta content="https://schanlar.github.io/about/" property="og:url"/>
+<link href="https://schanlar.github.io/about/" rel="canonical"/>
+<link href="../assets/img/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../assets/css/styles.css" rel="stylesheet"/>
+<link href="../assets/css/about-enhancements.css" rel="stylesheet"/>
+<script defer="" src="../assets/js/site.js"></script>
+<title>About | Savvas Chanlaridis, PhD</title>
+<style>
+/* About-page portrait area. Self-contained so the shared CSS is unchanged. */
+.about-hero-with-avatar {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) clamp(148px, 18vw, 218px);
+  gap: clamp(28px, 5vw, 78px);
+  align-items: center;
+}
+.about-hero-copy { min-width: 0; }
+.about-avatar {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--accent-tint);
+  color: var(--accent);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  justify-self: center;
+}
+.about-avatar span {
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 650;
+  letter-spacing: -0.05em;
+}
+.about-avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+@media (max-width: 680px) {
+  .about-hero-with-avatar { grid-template-columns: minmax(0, 1fr); gap: 30px; }
+  .about-avatar { width: 150px; justify-self: start; }
+}
+</style>
+</head>
+<body class="">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="top">
+<div class="container header-inner">
+<a aria-label="Savvas Chanlaridis, PhD — homepage" class="brand" href="../index.html"><span aria-hidden="true" class="brand-mark">SC<span class="brand-dot">.</span></span><span class="brand-name">Savvas Chanlaridis, PhD</span></a>
+<nav aria-label="Primary navigation" class="primary-nav" id="primary-nav"><a aria-current="page" href="index.html">About</a><a href="../projects/index.html">Projects</a><a href="../research/index.html">Research</a><a href="../publications/index.html">Publications</a><a class="nav-contact" href="../contact/index.html">Contact <span aria-hidden="true">↗</span></a></nav>
+<div class="header-controls">
+<button aria-label="Switch to dark mode" aria-pressed="false" class="icon-button theme-toggle" id="theme-toggle" title="Toggle color theme" type="button">
+<svg aria-hidden="true" class="sun-icon" fill="none" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41m0-14.14-1.41 1.41M6.34 17.66l-1.41 1.41"></path></svg>
+<svg aria-hidden="true" class="moon-icon" fill="none" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24"><path d="M20 15.1A8.5 8.5 0 0 1 8.9 4a8.5 8.5 0 1 0 11.1 11.1Z"></path></svg>
+</button>
+<button aria-controls="primary-nav" aria-expanded="false" aria-label="Open navigation menu" class="icon-button menu-toggle" id="menu-toggle" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+</div>
+</div>
+</header>
+<main id="main">
+<section class="page-hero container about-hero-with-avatar">
+  <div class="about-hero-copy"><span class="section-label">At a glance</span><h1>About</h1><p class="page-lead">My work spans applied AI and technology consulting, alongside research in computational astrophysics.</p><div class="hero-actions"><a class="button button-primary" download="" href="../assets/pdf/Savvas_Chanlaridis_Resume.pdf">Download CV (PDF) ↓</a><a class="button button-outline" href="../contact/index.html">Contact ↗</a></div></div>
+  <!-- PHOTO: Replace the SC span below with:
+       <img src="../assets/img/profile-photo.jpg" alt="Portrait of Savvas Chanlaridis" width="240" height="240" />
+       Then place profile-photo.jpg in assets/img/. -->
+  <div class="about-avatar">
+    <!-- <span aria-hidden="true">SC</span> -->
+     <img src="../assets/img/profile-photo.jpg" alt="Portrait of Savvas Chanlaridis" width="240" height="240" />
+  </div>
+</section><nav aria-label="About page sections" class="profile-section-nav"><div class="container profile-section-nav-inner"><span>On this page</span><a href="#background">Background</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#expertise">Technical Skills</a><a href="#teaching-talks">Teaching &amp; Talks</a></div></nav>
+<section class="section section-soft" id="background">
+  <div class="container about-single-story">
+    <article class="about-narrative-card" aria-labelledby="background-heading">
+      <h2 id="background-heading">Background</h2>
+      <p>My name is Savvas Chanlaridis (pronounced Sáv-vas Han-la-ri-dis). I earned my BSc in Physics from the <a href="https://www.auth.gr/en/" target="_blank" rel="noopener noreferrer">Aristotle University of Thessaloniki</a>, where I minored in Nuclear and Elementary Particle Physics. I then moved to Germany to pursue an MSc in Astrophysics at the <a href="https://www.uni-bonn.de/en/university/university?set_language=en" target="_blank" rel="noopener noreferrer">University of Bonn</a>.</p>
+      <p>In 2020, I returned to Aristotle University as a guest researcher in the <a href="https://niksterg.github.io/gw-group/" target="_blank" rel="noopener noreferrer">Gravitational Waves group</a> led by <a href="https://www.astro.auth.gr/n/?p=members&amp;u=4" target="_blank" rel="noopener noreferrer">Nikolaos Stergioulas</a>. There, I studied the effect of stellar winds on the evolution of low-mass helium stars. From 2021 to 2024, I conducted my doctoral research at the <a href="https://www.physics.uoc.gr/en" target="_blank" rel="noopener noreferrer">University of Crete</a>, where I worked in the Stellar AfterLife & Transients group at the <a href="https://www.ia.forth.gr/" target="_blank" rel="noopener noreferrer">Institute of Astrophysics - FORTH</a> under the supervision of <a href="https://www.ia.forth.gr/people/Antoniadis" target="_blank" rel="noopener noreferrer">John Antoniadis</a>,  focusing on numerical modelling of the formation and evolution of neutron stars.</p>
+      <p>In 2024, I began a second MSc in <a href="https://www.eap.gr/en/data-science-and-machine-learning/" target="_blank" rel="noopener noreferrer">Data Science and Machine Learning</a> at the <a href="https://www.eap.gr/en/" target="_blank" rel="noopener noreferrer">Hellenic Open University</a>, completing the degree in 2026. My interest in data-driven methods also led me to move into industry in 2025.</p>
+      <p>I joined Kivos Analytics as a Data Scientist, working on LLM-based applications and statistical evaluation methods. In March 2026, I joined EY as a Senior Consultant in Technology Consulting, where I work on applied AI and machine learning solutions.</p>
+    </article>
+  </div>
+</section>
+<section class="section" id="experience"><div class="container"><div class="section-intro"><span class="section-label">Employment History</span><h2>Experience</h2></div><div class="resume-timeline"><article class="resume-position"><div class="position-date">Mar 2026 — Present</div><div><h3>Senior Technology Consultant | AI/ML Engineer </h3><p class="position-org">EY</p><p>Applied AI systems, technical research, and enterprise Data &amp; AI architecture.</p></div></article><article class="resume-position"><div class="position-date">Jan 2025 — Feb 2026</div><div><h3>Data Scientist</h3><p class="position-org">Kivos Analytics</p><p>LLM prototypes, product taxonomy and attribute extraction, probabilistic forecasting evaluation, and retail machine learning.</p></div></article><article class="resume-position"><div class="position-date">Mar 2021 — Dec 2024</div><div><h3>Research Scientist</h3><p class="position-org">FORTH</p><p>Conducted advanced research on stellar astrophysics, led research projects managing cross-border teams, and contributed to high-impact publications.</p></div></article><article class="resume-position"><div class="position-date">Nov 2019 — Mar 2021</div><div><h3>Research Scientist</h3><p class="position-org">Aristotle University of Thessaloniki</p><p>Conducted numerical simulations utilizing High-Performance Computing (HPC) facilities.</p></div></article><article class="resume-position"><div class="position-date">Jul 2018 — Nov 2019</div><div><h3>Assistant Lecturer</h3><p class="position-org">University of Bonn</p><p>University-level teaching.</p></div></article></div></div></section>
+<section class="section section-soft" id="education"><div class="container"><div class="section-intro"><span class="section-label">Education</span><h2>Education</h2></div><div class="education-list"><article class="education-row"><span class="position-date">2026</span><div><h3>MSc in Data Science &amp; Machine Learning</h3><p>Hellenic Open University</p></div></article><article class="education-row"><span class="position-date">2024</span><div><h3>PhD in Astrophysics</h3><p>University of Crete</p></div></article><article class="education-row"><span class="position-date">2019</span><div><h3>MSc in Astrophysics</h3><p>University of Bonn</p></div></article><article class="education-row"><span class="position-date">2016</span><div><h3>BSc in Physics</h3><p>Aristotle University of Thessaloniki</p></div></article></div></div></section>
+<section class="section" id="expertise"><div class="container"><div class="section-intro"><h2>Technical Skills</h2></div><div class="skill-groups"><article class="skill-group"><h3>Programming &amp; scientific computing</h3><div class="mini-tags"><span>Python</span><span>C</span><span>NumPy</span><span>SciPy</span><span>Pandas</span></div></article><article class="skill-group"><h3>Machine learning</h3><div class="mini-tags"><span>scikit-learn</span><span>TensorFlow</span><span>XGBoost</span></div></article><article class="skill-group"><h3>Generative &amp; agentic AI</h3><div class="mini-tags"><span>LLMs</span><span>OpenAI API</span><span>Azure OpenAI</span><span>LangChain</span><span>GitHub Copilot agents</span></div></article><article class="skill-group"><h3>Cloud &amp; data platforms</h3><div class="mini-tags"><span>Databricks</span><span>Azure AI</span><span>Microsoft Fabric</span><span>SQL</span><span>dbt</span><span>ClickHouse</span></div></article><article class="skill-group"><h3>Development tools</h3><div class="mini-tags"><span>Git</span><span>Docker</span><span>pytest</span></div></article><article class="skill-group"><h3>Scientific modelling</h3><div class="mini-tags"><span>MESA</span><span>Numerical simulations</span><span>HPC</span></div></article></div></div></section>
+<section class="section section-soft" id="teaching-talks">
+  <div class="container">
+    <div class="section-intro"><span class="section-label">Academic Activities</span><h2>Teaching &amp; Talks</h2></div>
+    <div class="discipline-grid academic-activity-grid">
+      <article class="discipline-card academic-activity-card" id="teaching" aria-labelledby="teaching-title">
+        <h3 id="teaching-title">Teaching</h3>
+        <p>Alongside my research, I have taught undergraduate and graduate university courses. My duties have included course planning and preparation, lecturing, individual student support, and assessment.</p>
+        <section class="academic-group" aria-labelledby="crete-teaching">
+          <h4 id="crete-teaching">University of Crete | Institute of Astrophysics – FORTH</h4>
+          <ul class="academic-records">
+            <li>
+              <span class="academic-date">September 2022 – December 2023</span>
+              <h5><a href="https://eclass.physics.uoc.gr/courses/ECL-MISC104/" target="_blank" rel="noopener noreferrer">Data Analysis with Python</a></h5>
+              <p>Intensive program in scientific data analysis for undergraduate students. I organized and taught the course.</p>
+              <p class="academic-role"><strong>Role:</strong> Lecturer</p>
+            </li>
+            <li>
+              <span class="academic-date">September 2021 – December 2022</span>
+              <h5><a href="https://www.physics.uoc.gr/en/courses/23" target="_blank" rel="noopener noreferrer">Astrophysics I</a></h5>
+              <p>Introductory undergraduate astrophysics course.</p>
+              <p class="academic-role"><strong>Role:</strong> Instructor</p>
+            </li>
+            <li>
+              <span class="academic-date">February 2022 – September 2022</span>
+              <h5><a href="https://www.physics.uoc.gr/en/courses/70" target="_blank" rel="noopener noreferrer">Introduction to Modern Physics II</a></h5>
+              <p>Undergraduate course covering special relativity, nuclear physics, and elementary particle physics.</p>
+              <p class="academic-role"><strong>Role:</strong> Instructor</p>
+            </li>
+          </ul>
+        </section>
+        <section class="academic-group" aria-labelledby="bonn-teaching">
+          <h4 id="bonn-teaching">University of Bonn | Argelander Institute for Astronomy</h4>
+          <ul class="academic-records">
+            <li>
+              <span class="academic-date">July 2018 – October 2019</span>
+              <h5><a href="https://www.praktika.physik.uni-bonn.de/module/physics601" target="_blank" rel="noopener noreferrer">Radio-astronomical Observations</a></h5>
+              <p>Advanced graduate laboratory course.</p>
+              <p class="academic-role"><strong>Role:</strong> Instructor</p>
+            </li>
+          </ul>
+        </section>
+        <a class="inline-link academic-resource-link" href="https://github.com/schanlar/python-UoC" target="_blank" rel="noopener noreferrer">Teaching materials on GitHub <span aria-hidden="true">↗</span></a>
+      </article>
+      <article class="discipline-card academic-activity-card" id="talks" aria-labelledby="talks-title">
+        <h3 id="talks-title">Talks</h3>
+        <p>Selected talks and conference presentations from my astrophysics research.</p>
+        <section class="academic-group" aria-labelledby="invited-seminars">
+          <h4 id="invited-seminars">Invited seminars</h4>
+          <ul class="academic-records">
+            <li>
+              <span class="academic-date">November 2019</span>
+              <h5>Non-accreting Helium Stars as Progenitors of Thermonuclear Supernovae</h5>
+              <p>Section of Astronomy, Astrophysics &amp; Celestial Mechanics seminar, Aristotle University of Thessaloniki, Thessaloniki, Greece.</p>
+            </li>
+          </ul>
+        </section>
+        <section class="academic-group" aria-labelledby="conference-talks">
+          <h4 id="conference-talks">Conference talks</h4>
+          <ul class="academic-records">
+            <li>
+              <span class="academic-date">July 2021</span>
+              <h5>Type Ia Supernovae from non-accreting progenitors</h5>
+              <p>15th Conference of the Hellenic Astronomical Society, Patras, Greece. Oral presentation (online).</p>
+            </li>
+            <li>
+              <span class="academic-date">June 2023</span>
+              <h5>Thermonuclear and Electron-Capture Supernovae from Stripped Stars</h5>
+              <p>16th Conference of the Hellenic Astronomical Society, Patras, Greece. Oral presentation (in person).</p>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-top">
+<a aria-label="Savvas Chanlaridis, PhD — homepage" class="brand" href="../index.html"><span aria-hidden="true" class="brand-mark">SC<span class="brand-dot">.</span></span><span class="brand-name">Savvas Chanlaridis, PhD</span></a>
+<div aria-label="Professional profiles" class="footer-links">
+<a href="https://www.linkedin.com/in/schanlar" rel="noopener noreferrer" target="_blank">LinkedIn ↗</a>
+<a href="https://github.com/schanlar" rel="noopener noreferrer" target="_blank">GitHub ↗</a>
+<a href="https://scholar.google.com/citations?user=IRZcn5oAAAAJ" rel="noopener noreferrer" target="_blank">Scholar ↗</a>
+<a href="https://orcid.org/0000-0002-9323-9728" rel="noopener noreferrer" target="_blank">ORCID ↗</a>
+<a href="https://arxiv.org/search/?query=Savvas+Chanlaridis&amp;searchtype=author" rel="noopener noreferrer" target="_blank">arXiv ↗</a>
+</div>
+</div>
+<div class="container footer-bottom"><p>© 2026 Savvas Chanlaridis</p><p>AI &amp; Data Science · Astrophysics Research</p></div>
+</footer>
+</body>
+</html>

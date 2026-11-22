@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#f7f9fb" name="theme-color"/>
+<meta content="A statistical approach to interpreting probabilistic forecast errors across demand series with different scales." name="description"/>
+<meta content="website" property="og:type"/>
+<meta content="Demand-adjusted probabilistic forecast evaluation | Savvas Chanlaridis" property="og:title"/>
+<meta content="A statistical approach to interpreting probabilistic forecast errors across demand series with different scales." property="og:description"/>
+<meta content="https://schanlar.github.io/projects/probabilistic-forecast-evaluation/" property="og:url"/>
+<link href="https://schanlar.github.io/projects/probabilistic-forecast-evaluation/" rel="canonical"/>
+<link href="../../assets/img/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../../assets/css/styles.css" rel="stylesheet"/>
+<script defer="" src="../../assets/js/site.js"></script>
+<title>Demand-adjusted probabilistic forecast evaluation | Savvas Chanlaridis</title>
+</head>
+<body class="case-page">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="top">
+<div class="container header-inner">
+<a aria-label="Savvas Chanlaridis, PhD — homepage" class="brand" href="../../index.html"><span aria-hidden="true" class="brand-mark">SC<span class="brand-dot">.</span></span><span class="brand-name">Savvas Chanlaridis, PhD</span></a>
+<nav aria-label="Primary navigation" class="primary-nav" id="primary-nav"><a href="../../about/index.html">About</a><a aria-current="page" href="../index.html">Projects</a><a href="../../research/index.html">Research</a><a href="../../publications/index.html">Publications</a><a class="nav-contact" href="../../contact/index.html">Contact <span aria-hidden="true">↗</span></a></nav>
+<div class="header-controls">
+<button aria-label="Switch to dark mode" aria-pressed="false" class="icon-button theme-toggle" id="theme-toggle" title="Toggle color theme" type="button">
+<svg aria-hidden="true" class="sun-icon" fill="none" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41m0-14.14-1.41 1.41M6.34 17.66l-1.41 1.41"></path></svg>
+<svg aria-hidden="true" class="moon-icon" fill="none" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24"><path d="M20 15.1A8.5 8.5 0 0 1 8.9 4a8.5 8.5 0 1 0 11.1 11.1Z"></path></svg>
+</button>
+<button aria-controls="primary-nav" aria-expanded="false" aria-label="Open navigation menu" class="icon-button menu-toggle" id="menu-toggle" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+</div>
+</div>
+</header>
+<main id="main">
+<section class="page-hero container case-hero">
+<nav aria-label="Breadcrumb" class="breadcrumbs">
+<a href="../../index.html">Home</a>
+<span aria-hidden="true">/</span>
+<a href="../index.html">Projects</a>
+<span aria-hidden="true">/</span>
+<span aria-current="page">Demand-adjusted probabilistic forecast evaluation</span>
+</nav>
+<span class="section-label">Statistical Modelling · Probabilistic Forecasting</span>
+<h1>Demand-adjusted probabilistic forecast evaluation</h1>
+<p class="page-lead">A statistical approach to interpreting probabilistic forecast errors across demand series with different scales.</p>
+<div class="case-meta">
+<div><span>Role</span><strong>Data Scientist</strong></div>
+<div><span>Context</span><strong>Kivos Analytics · Professional project</strong></div>
+</div>
+</section>
+<section class="section section-soft">
+<div class="container article-layout">
+<article class="article-content">
+
+
+
+
+
+
+<section><span class="section-label">The challenge</span><h2>Overview</h2>
+    <p>Probabilistic forecasts represent a range of possible outcomes rather than a single predicted value. Their evaluation must therefore consider both the observed outcome and the uncertainty expressed by the forecast distribution.</p>
+    <p>The Continuous Ranked Probability Score (CRPS) is a proper scoring rule commonly used for this purpose. However, CRPS is expressed in the units of the predicted variable and is sensitive to its scale. Comparing raw CRPS values across demand series with substantially different levels of variability can therefore be misleading.</p>
+    <p>A higher CRPS does not necessarily indicate worse relative performance when the underlying forecasting tasks have different levels of uncertainty. Forecasts for more variable demand can have larger expected errors even when the predicted distributions describe that uncertainty appropriately.</p>
+    <p>The goal was to assess individual forecast errors in context, rather than interpreting their absolute CRPS values in isolation.</p>
+    <!-- <p>Probabilistic forecasts describe a distribution of possible outcomes rather than a single predicted value. The Continuous Ranked Probability Score (CRPS) evaluates these forecasts against observed outcomes, but its magnitude depends on the scale of the variable being predicted.</p>
+    <p>As a result, raw CRPS values can be misleading when comparing demand series with substantially different scales and levels of uncertainty. A larger error does not necessarily indicate worse relative forecasting performance. The challenge was to evaluate individual forecast errors in the context of demand magnitude and the model’s historical behavior.</p> -->
+</section>
+<section><span class="section-label">My work</span><h2>My contribution</h2><p>During an ongoing analysis, we identified the limitations of directly comparing CRPS across demand levels. I subsequently developed a statistical methodology for interpreting observed CRPS values relative to an empirical reference derived from historical forecast evaluations.</p><ul class="editorial-list"><li>Investigated the relationship between demand magnitude and observed CRPS.</li><li>Developed a reference function describing the CRPS typically observed at different demand levels within comparable groups of forecasts.</li><li>Compared individual forecast scores with the corresponding reference to identify errors above or below historical expectations.</li><li>Designed the method as a complementary evaluation diagnostic without changing the underlying forecasting model.</li></ul></section><section aria-labelledby="disclaimer-title"><h2 id="disclaimer-title">Disclaimer</h2><p class="disclosure-note">The adjusted comparison describes how a forecast performs relative to a historical reference; it is not an absolute measure of forecast quality. A forecast can perform as expected relative to a weak model while still being inaccurate or poorly calibrated. The interpretation depends on the representativeness and stability of the reference data and requires validation on unseen forecasts. Because the reference uses information about realized demand, the resulting diagnostic does not retain the proper-scoring guarantees of CRPS. It should therefore complement, rather than replace, raw CRPS, calibration checks, and other probabilistic forecast diagnostics.</p></section></article>
+<aside class="article-aside">
+<div class="aside-card">
+<span class="section-label">Project at a glance</span>
+<p class="aside-role">Data Scientist</p>
+<div class="mini-tags">
+<span>Python</span>
+<span>CRPS</span>
+<span>Probabilistic forecasting</span>
+<span>Statistical modelling</span>
+</div>
+<a class="inline-link" href="../index.html">← All projects</a>
+</div>
+</aside>
+</div>
+</section>
+<div class="container page-next"><a class="inline-link" href="../index.html">← Back to all projects</a><a class="inline-link" href="../../research/index.html">Explore scientific research ↗</a></div>
+</main>
+<footer class="site-footer">
+<div class="container footer-top">
+<a aria-label="Savvas Chanlaridis, PhD — homepage" class="brand" href="../../index.html"><span aria-hidden="true" class="brand-mark">SC<span class="brand-dot">.</span></span><span class="brand-name">Savvas Chanlaridis, PhD</span></a>
+<div aria-label="Professional profiles" class="footer-links">
+<a href="https://www.linkedin.com/in/schanlar" rel="noopener noreferrer" target="_blank">LinkedIn ↗</a>
+<a href="https://github.com/schanlar" rel="noopener noreferrer" target="_blank">GitHub ↗</a>
+<a href="https://scholar.google.com/citations?user=IRZcn5oAAAAJ" rel="noopener noreferrer" target="_blank">Scholar ↗</a>
+<a href="https://orcid.org/0000-0002-9323-9728" rel="noopener noreferrer" target="_blank">ORCID ↗</a>
+<a href="https://arxiv.org/search/?query=Savvas+Chanlaridis&amp;searchtype=author" rel="noopener noreferrer" target="_blank">arXiv ↗</a>
+</div>
+</div>
+<div class="container footer-bottom"><p>© 2026 Savvas Chanlaridis</p><p>AI &amp; Data Science · Astrophysics Research</p></div>
+</footer>
+</body>
+</html>
